@@ -1,0 +1,300 @@
+/*This file is separated from style.css so that whenenver the theme get updated it won't get effected*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
+:root {
+  --bs-font-sans-serif: "Poppins", sans-serif;
+}
+
+/*YOUR MOBILE CSS HERE*/
+
+.wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: #fff;
+}
+
+.header-top {
+  padding: 19px 15px 14px 15px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #a1a5b7;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.header-top img {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.header-top .name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3f4254;
+  margin: 3px 0 0;
+}
+
+.header-top .header-back a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #008285;
+}
+
+.header-top .header-back img {
+  position: relative;
+  top: -1px;
+}
+
+.filters-list {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eef5f9;
+}
+
+.filter {
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 3px 21px 5px 18px;
+  background: url(../../assets/images/filter-arrow.svg) left center no-repeat;
+}
+
+.filter:first-child {
+  background: none;
+  padding-left: 9px;
+}
+
+.filter select {
+  border: none;
+  padding: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.filter select::-ms-expand {
+  display: none;
+}
+
+.filter option {
+  display: block;
+  color: #181c32;
+  background: url(../../assets/images/chevron-down.svg) right center no-repeat;
+}
+
+.filter label {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #7e8299;
+}
+
+.filter label:after {
+  content: url(../../assets/images/chevron-down.svg);
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 10px);
+}
+
+h2 {
+  margin: 20px 9px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #3f4254;
+}
+
+.activity-list {
+  padding: 9px;
+}
+
+.activity-item a {
+  min-height: 99px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(76, 87, 125, 0.04);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.activity-item .image {
+  width: 64px;
+}
+
+.activity-item .image img {
+  width: auto;
+  height: auto;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.activity-item .text {
+  width: calc(100% - 84px);
+}
+
+.activity-item .title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3f4254;
+  margin: 0 0 10px;
+}
+
+.activity-item .date {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #7e8299;
+}
+
+.activity-item .date span {
+  color: #b5b5c3;
+}
+
+.activity-item .nfc {
+  width: 20px;
+}
+
+.specs {
+  padding: 15px;
+}
+
+.specs .item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+.specs .label {
+  width: 38%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #293854;
+}
+
+.specs .item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #181c32;
+}
+
+.table {
+  padding: 0 15px;
+  margin: 0 0 22px;
+}
+
+.table table {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #181c32;
+  border-color: #d9dbe4;
+}
+
+.table thead {
+  background: #1b2428;
+  color: #fff;
+}
+
+.table tr.highlighted {
+  background: #ffebeb;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.input-item {
+  padding: 0 15px;
+  margin: 0 0 20px;
+}
+
+.input-item strong {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #181c32;
+}
+
+.input-item label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #293854;
+  margin: 0 0 2px;
+}
+
+.input-item label a {
+  font-size: 10px;
+  line-height: 15px;
+  color: #008285;
+}
+
+.input-item label span {
+  color: rgba(126, 130, 153, 1);
+  font-style: italic;
+}
+
+.input-item select,
+.input-item input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #dee5ef;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #181c32;
+}
+
+.input-item input:disabled {
+  background: #f4f4f4;
+}
+
+.footer {
+  width: 100%;
+  background: #fff;
+  padding: 17px 0;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.btn-green {
+  width: 172px;
+  height: 39px;
+  background: #008285;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 374px) {
+  .filter {
+    font-size: 11px;
+  }
+  .filter label {
+    font-size: 10px;
+  }
+}
