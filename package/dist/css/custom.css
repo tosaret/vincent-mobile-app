@@ -80,6 +80,8 @@ header {
   -moz-appearance: none;
   -webkit-appearance: none;
   padding-right: 21px;
+  background: none;
+  color: #181c32;
 }
 .filter select::-ms-expand {
   display: none;
