@@ -64,7 +64,7 @@ header {
   font-weight: 500;
   font-size: 13px;
   line-height: 17px;
-  padding: 3px 21px 5px 18px;
+  padding: 3px 0 5px 18px;
   background: url(../../assets/images/filter-arrow.svg) left center no-repeat;
 }
 
@@ -79,6 +79,7 @@ header {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  padding-right: 21px;
 }
 .filter select::-ms-expand {
   display: none;
@@ -91,10 +92,12 @@ header {
 }
 
 .filter label {
+  display: block;
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
   color: #7e8299;
+  padding-right: 21px;
 }
 
 .filter label:after {
@@ -263,6 +266,10 @@ h2 {
   font-size: 14px;
   line-height: 140%;
   color: #181c32;
+}
+
+.input-item select {
+  border-right: 15px solid transparent;
 }
 
 .input-item input:disabled {
