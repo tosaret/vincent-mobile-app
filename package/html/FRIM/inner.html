@@ -145,7 +145,10 @@
       </div>
 
       <div class="input-item">
-        <label for="">Spesies <a href="#">(View Details)</a></label>
+        <label for="">
+          Spesies
+          <span class="show-modal" onclick="showModal()">(View Details)</span>
+        </label>
         <select name="" id="">
           <option value="">Peltophorum pterocarpum</option>
         </select>
@@ -166,6 +169,49 @@
       <footer class="footer">
         <button class="btn-green">Submit</button>
       </footer>
+
+      <div class="popup-wrapper" id="popup">
+        <div class="popup">
+          <button onclick="closeModal()" class="close-modal">
+            <img src="../../assets/images/close-icon.svg" alt="Close Modal" />
+          </button>
+          <h4>Peltophorum pterocarpum</h4>
+          <div class="specs">
+            <div class="item">
+              <div class="label">Kompatmen</div>
+              <div class="value">130</div>
+            </div>
+            <div class="item">
+              <div class="label">Last update</div>
+              <div class="value">22 Nov, 2022</div>
+            </div>
+            <div class="item">
+              <div class="label">Hutan Simpan</div>
+              <div class="value">Bukit lagong</div>
+            </div>
+            <div class="item">
+              <div class="label">No Pokok</div>
+              <div class="value">11243</div>
+            </div>
+            <div class="item">
+              <div class="label">Dbh</div>
+              <div class="value">102.0</div>
+            </div>
+            <div class="item">
+              <div class="label">Isipadu</div>
+              <div class="value">102.0</div>
+            </div>
+            <div class="item">
+              <div class="label">Kordinat X</div>
+              <div class="value">10142.0</div>
+            </div>
+            <div class="item">
+              <div class="label">Kordinat Y</div>
+              <div class="value">63142.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ============================================================== -->
     <!-- End Page wrapper  -->
