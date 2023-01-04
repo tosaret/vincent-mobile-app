@@ -82,6 +82,8 @@ header {
   padding-right: 21px;
   background: none;
   color: #181c32;
+  position: relative;
+  z-index: 2;
 }
 .filter select::-ms-expand {
   display: none;
@@ -100,13 +102,15 @@ header {
   line-height: 15px;
   color: #7e8299;
   padding-right: 21px;
+  position: relative;
+  z-index: 2;
 }
 
 .filter label:after {
   content: url(../../assets/images/chevron-down.svg);
   position: absolute;
-  right: 8px;
-  top: calc(50% - 10px);
+  right: 6px;
+  top: 50%;
 }
 
 h2 {
